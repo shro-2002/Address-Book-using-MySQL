@@ -10,8 +10,8 @@ CREATE TABLE IF NOT EXISTS Person (
     type VARCHAR(50)
 );
 
--- Create CommunicationInfo Table
-CREATE TABLE IF NOT EXISTS CommunicationInfo (
+-- Create ContactDetails Table
+CREATE TABLE IF NOT EXISTS ContactDetails (
     id INT AUTO_INCREMENT PRIMARY KEY,
     person_id INT,
     phone_number VARCHAR(20),
@@ -42,7 +42,7 @@ VALUES
 ('Aegor', 'Rivers',  'Friends'),
 ('Rhaella', 'Targaryen', 'Family');
 
-INSERT INTO CommunicationInfo (person_id, phone_number, email)
+INSERT INTO ContactDetails (person_id, phone_number, email)
 VALUES 
 (1, '555-1234', 'Syrax@dragon.com'),
 (2, '555-78876', 'Caraxes@dragon.com'),
